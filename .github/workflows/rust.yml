@@ -1,0 +1,20 @@
+name: Rust
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  buildAndRun:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: cargo build --verbose
+    - name: Run
+      run: cargo run
