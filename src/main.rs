@@ -1,5 +1,5 @@
 use rand::Rng;
-use serde::{Deserialize, Serialize};
+use serde::{Deserialize};
 use std::fs::OpenOptions;
 use std::io::prelude::*;
 
